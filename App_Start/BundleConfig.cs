@@ -9,8 +9,7 @@ namespace VideoMag
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js",
-                        "~/Scripts/js/jquery/jquery-2.2.4.min.js"
+                        "~/Scripts/jquery-{version}.js"
                         ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(

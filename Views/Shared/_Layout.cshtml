@@ -14,8 +14,11 @@
     <link rel="icon" href="~/Content/img/core-img/favicon.ico">
 
     <!-- Stylesheet -->
-    @Styles.Render("~/Content/css");
+    <!-- scripts -->
+    @Scripts.Render("~/bundles/jquery");
+    @Scripts.Render("~/bundles/plugins");
     @Scripts.Render("~/bundles/bootstrap");
+    @Styles.Render("~/Content/css");
 
 </head>
 
@@ -150,7 +153,8 @@
                         <div class="top-search-area">
                             <form action="#" method="post">
                                 <input type="search" name="top-search" id="topSearch" placeholder="Search">
-                                <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                <button type="submit" class="btn"><i class="fa fa-search"
+                                        aria-hidden="true"></i></button>
                             </form>
                         </div>
                     </nav>
@@ -159,7 +163,7 @@
         </div>
     </header>
     <!-- ##### Header Area End ##### -->
-    
+
     @RenderBody();
 
     <!-- ##### Footer Area Start ##### -->
@@ -171,7 +175,9 @@
                     <div class="footer-content">
                         <!-- Logo -->
                         <a href="index.html" class="foo-logo"><img src="~/Content/img/core-img/logo.png" alt=""></a>
-                        <p>Donec cursus eros et risus scelerisque, sit amet ultrices arcu scelerisque. Sed consequat fermentum turpis, vulputate maximus.Donec cursus eros et risus scelerisque, sit amet ultrices arcu scelerisque. Sed consequat fermentum turpis, vulputate maximus</p>
+                        <p>Donec cursus eros et risus scelerisque, sit amet ultrices arcu scelerisque. Sed consequat
+                            fermentum turpis, vulputate maximus.Donec cursus eros et risus scelerisque, sit amet
+                            ultrices arcu scelerisque. Sed consequat fermentum turpis, vulputate maximus</p>
                         <div class="footer-social-info d-flex">
                             <a href="#"><i class="fa fa-pinterest"></i></a>
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -233,7 +239,9 @@
                         <a href="#" />
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                            target="_blank">Colorlib</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
@@ -242,10 +250,9 @@
     </footer>
     <!-- ##### Footer Area End ##### -->
 
-
-    <!-- scripts -->
-    @Scripts.Render("~/bundles/jquery");
-    @Scripts.Render("~/bundles/plugins");
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
 </body>
 
